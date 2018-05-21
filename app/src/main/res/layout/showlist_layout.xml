@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/Select_calss"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:id="@+id/buttonbarcode"
+            android:background="@drawable/button_selcet"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:text="แสกน Barcode"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"/>
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_photo_camera_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/buttonhistory"
+            android:background="@drawable/button_selcet"
+            android:layout_width="340dp"
+            android:layout_height="70dp"
+            android:text="เช็คย้อนหลัง"
+            android:layout_marginBottom="20dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

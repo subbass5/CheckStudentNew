@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Check Student</string>
+    <string name="main_select">ตัวเลือกการจัดการ</string>
+    <string name="Select_calss">Menu</string>
+    <string name="Selacr_room">โปรดเลือกห้องในการเช็ค</string>
+
+    <array name="list_number">
+        <item></item>
+    </array>
+    <string name="title_activity_main_apps">MainApps</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="msg_loading">กรุณารอซักครู่</string>
+    <string name="msg_Logout">คุณต้องการออกจากระบบ ?</string>
+    <string name="action_submit">ตกลง</string>
+    <string name="action_cancel">ยกเลิก</string>
+    <string name="dialog_title">คำเตือน</string>
+    <string name="nav_scan">เช็คชื่อด้วย Bar Code</string>
+    <string name="nav_home">หน้าหลัก</string>
+    <string name="nav_list_checked">ค้นหารายชื่อนักเรียน</string>
+    <string name="mu_one">ดูรายชื่อผลการเช็คชื่อ</string>
+    <string name="mu_two">เช็คชื่อเข้าแถว</string>
+</resources>

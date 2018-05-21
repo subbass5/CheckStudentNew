@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBDEFB">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="430dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp"
+        android:background="@drawable/bg_login1"
+        >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/logo3" />
+
+        <EditText
+            android:id="@+id/et_user"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableRight="@drawable/ic_person_black_24dp"
+            android:hint="ชื่อผู้ใช้งาน"
+            android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:hint="รหัสผ่าน"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_vpn_key_black_24dp"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="เข้าสู่ระบบ"
+        android:textColor="#ffff"
+        android:background="@drawable/button_login"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

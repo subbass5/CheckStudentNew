@@ -7,9 +7,9 @@
 
     <ImageView
         android:id="@+id/imageMain"
-        android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark" />
     <LinearLayout
         android:orientation="vertical"
         android:layout_marginBottom="30dp"

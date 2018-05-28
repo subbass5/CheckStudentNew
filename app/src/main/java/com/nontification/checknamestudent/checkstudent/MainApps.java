@@ -25,6 +25,7 @@ import com.google.zxing.Result;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.nontification.checknamestudent.checkstudent.Fragment.FragmentMainApps;
+import com.nontification.checknamestudent.checkstudent.Fragment.Fragment_Mainapp2;
 import com.nontification.checknamestudent.checkstudent.Fragment.ScanIDCard;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
@@ -78,7 +79,7 @@ public class MainApps extends AppCompatActivity
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        FragmentMainApps mainApps = new FragmentMainApps();
+        Fragment_Mainapp2 mainApps = new Fragment_Mainapp2();
         replaceFragment(mainApps,null);
 
 

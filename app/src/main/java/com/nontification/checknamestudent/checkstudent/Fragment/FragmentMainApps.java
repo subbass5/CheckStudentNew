@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.google.zxing.Result;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-import com.nontification.checknamestudent.checkstudent.MainApps;
+//import com.nontification.checknamestudent.checkstudent.MainApps;
 import com.nontification.checknamestudent.checkstudent.R;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
@@ -41,16 +41,20 @@ public class FragmentMainApps extends Fragment implements View.OnClickListener {
 
     private void doScan(){
 
-        scannerView = new ZXingScannerView(context);
-        scannerView.startCamera();
-        scannerView.setResultHandler(new ZXingScannerView.ResultHandler() {
-            @Override
-            public void handleResult(Result result) {
-                scannerView.stopCamera();
-                scannerView.startCamera();
-                Toast.makeText(context, ""+result.getText(), Toast.LENGTH_SHORT).show();
-            }
-        });
+//        scannerView = new ZXingScannerView(context);
+//        scannerView.startCamera();
+//        scannerView.setResultHandler(new ZXingScannerView.ResultHandler() {
+//            @Override
+//            public void handleResult(Result result) {
+//                scannerView.stopCamera();
+//                scannerView.startCamera();
+//                Toast.makeText(context, ""+result.getText(), Toast.LENGTH_SHORT).show();
+//            }
+//        });
+
+        Intent intent = new Intent(getContext(), ScanClass.class);
+        startActivity(intent);
+
 
 //            IntentIntegrator integrator = new IntentIntegrator(getActivity());
 //            integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
@@ -99,7 +103,12 @@ public class FragmentMainApps extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.card_setType:
+
+                break;
+            case R.id.card_setShowList:
+
                 doScan();
+
                 break;
         }
     }
